@@ -17,7 +17,6 @@ import jakarta.validation.Valid;
 @RequestMapping("/api/v1/transactions")
 public class TransactionController {
 
-    // Change 1: Inject the service through the constructor so Spring can create this controller.
     private final TransactionService transactionService;
 
     public TransactionController(TransactionService transactionService) {

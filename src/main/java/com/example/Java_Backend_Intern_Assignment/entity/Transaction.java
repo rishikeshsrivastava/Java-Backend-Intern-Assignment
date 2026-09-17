@@ -38,14 +38,14 @@ public class Transaction {
     @Column(nullable = false)
     private UUID userId;
 
-     @Column(nullable = false, precision = 19, scale = 4)
+    @Column(nullable = false, precision = 19, scale = 2)
     private BigDecimal amount;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private TransactionType type;
 
-    @Column(nullable = false, precision = 19, scale = 4)
+    @Column(nullable = false, precision = 19, scale = 2)
     private BigDecimal balanceAfter;
 
     @Column(nullable = false, updatable = false)

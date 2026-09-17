@@ -26,7 +26,7 @@ public class Wallet {
     @Column(nullable = false, unique = true)
     private UUID userId;
 
-    @Column(nullable = false, precision = 19, scale = 4)
+    @Column(nullable = false, precision = 19, scale = 2)
     private BigDecimal balance;
 
     @Version
